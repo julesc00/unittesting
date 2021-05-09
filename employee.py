@@ -1,3 +1,4 @@
+import requests
 
 # def decorator(f):
 #     """A decorator example for comprehension"""
@@ -35,3 +36,6 @@ class Employee:
 
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amt)
+
+    def monthly_schedule(self, month):
+        response = requests.get(f"http://company.com/{self.last}/{month}")

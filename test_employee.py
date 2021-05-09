@@ -10,6 +10,7 @@ class TestEmployee(unittest.TestCase):
         self.emp_2 = Employee("Julio", "Briones", 60000)
 
     def tearDown(self):
+        """For database mocking cleanup."""
         pass
 
     def test_email(self):
